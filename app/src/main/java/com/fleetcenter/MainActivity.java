@@ -12,27 +12,28 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mNextQuoteButton;
+    EditText mLoginInput;
+    EditText mPasswordInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mNextQuoteButton = findViewById(R.id.button);
+        mLoginInput = (EditText) findViewById(R.id.loginInput);
+        mPasswordInput = (EditText) findViewById(R.id.passwordInput);
 
-//        mNextQuoteButton.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Następny cytat pedale", Snackbar.LENGTH_LONG).show();
-//            }
-//        });
     }
-//
-//    public void metoda(View view) {
-//        Snackbar.make(view, "AHA", Snackbar.LENGTH_LONG).show();
-//    }
+
+    public void onLogin (View view){
+        String login = mLoginInput.getText().toString();
+        String password = mPasswordInput.getText().toString();
+
+        BackgroundWork backgroundWork = new BackgroundWork(this);
+        backgroundWork.execute("login", login, password);
+    }
 }

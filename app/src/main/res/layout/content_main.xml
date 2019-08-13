@@ -8,109 +8,50 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="132dp"
-        android:layout_height="87dp"
-        android:text="Hello World!"
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="744dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
-
-    <TextView
-        android:id="@+id/mainTitleView"
-        android:layout_width="0dp"
-        android:layout_height="52dp"
-        android:background="#FFEB3B"
-        android:fontFamily="@font/play"
-        android:gravity="center"
-        android:text="Wybierz pojazd"
-        android:textColor="#000"
-        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/segmentBView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/play"
-        android:text="SEGMENT B"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainTitleView" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/segmentBView">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="192dp"
-            android:layout_height="49dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="4dp"
-            android:background="#E4E2E2"
-            android:text="Suzuki Swift\nLU675JF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="192dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="4dp"
-            android:background="#E4E2E2"
-            android:text="Suzuki Swift\nLU675JF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="395dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="185dp"
-            android:layout_height="28dp"
+            android:id="@+id/loginButton"
+            android:layout_width="181dp"
+            android:layout_height="51dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="#DD4D4D"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="188dp"
-            android:layout_height="31dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:background="#B82424"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginBottom="8dp"
+            android:onClick="onLogin"
+            android:text="Zaloguj" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="171dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/loginInput"
+            android:layout_width="174dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

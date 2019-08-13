@@ -3,4 +3,6 @@
     <color name="colorPrimary">#F06600</color>
     <color name="colorPrimaryDark">#F06600</color>
     <color name="colorAccent">#F06600</color>
+    <color name="fleetGreen">#54E91E</color>
+    <color name="fleetGray">#CCCBCB</color>
 </resources>
