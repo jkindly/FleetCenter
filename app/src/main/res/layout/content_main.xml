@@ -5,22 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     tools:showIn="@layout/activity_main">
 
 
     <LinearLayout
-        android:layout_width="359dp"
-        android:layout_height="744dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zaloguj się do aplikacji"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="100dp"/>
+
+        <EditText
+            android:id="@+id/loginInput"
+            android:layout_width="174dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="login"/>
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="171dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="hasło"/>
 
         <Button
             android:id="@+id/loginButton"
@@ -32,26 +61,6 @@
             android:onClick="onLogin"
             android:text="Zaloguj" />
 
-        <EditText
-            android:id="@+id/passwordInput"
-            android:layout_width="171dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:ems="10"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/loginInput"
-            android:layout_width="174dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:ems="10"
-            android:inputType="textPersonName" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

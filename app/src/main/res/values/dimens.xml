@@ -1,3 +1,7 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="titleSize">8sp</dimen>
+    <dimen name="defSize">5sp</dimen>
+    <dimen name="twoCarsLayoutMargin">10dp</dimen>
+    <dimen name="carCardViewMarginRight">5dp</dimen>
 </resources>
